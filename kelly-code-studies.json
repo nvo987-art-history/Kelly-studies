@@ -1,0 +1,103 @@
+{
+  "document": {
+    "title": "Kelly Code Studies",
+    "subtitle": "Empirical Studies of Identity, Recognizability and Portability",
+    "version": "1.0",
+    "publication_date": "2026-06-14",
+    "language": "en",
+    "website": "https://studies.kellycode.us"
+  },
+
+  "author": {
+    "name": "Nicholas Van-Orton",
+    "identifier": "NVO987"
+  },
+
+  "framework": {
+    "name": "Kelly Code",
+    "components": [
+      {
+        "version": "V1",
+        "title": "The Theory of Recognizability"
+      },
+      {
+        "version": "V2",
+        "title": "The Theory of Portability"
+      }
+    ]
+  },
+
+  "origin": {
+    "description": "The Kelly Code emerged from comparative observations involving Sonia Delaunay and Grace Kelly, leading to the concept of recurring identity systems and visual codes."
+  },
+
+  "case_studies": [
+    {
+      "id": "KC-CS-001",
+      "title": "Jacqueline Kennedy and the Art of Visual Power",
+      "supports": "Kelly Code V1",
+      "focus": [
+        "Visual Consistency",
+        "Communication Consistency",
+        "Behavioral Consistency",
+        "Symbolic Meaning"
+      ]
+    },
+    {
+      "id": "KC-CS-002",
+      "title": "Alfred Hitchcock and Sonia Delaunay: The Choreography of Attention",
+      "supports": "Kelly Code V1",
+      "focus": [
+        "Visual Rhythm",
+        "Attention Architecture",
+        "Pattern Recognition",
+        "Symbolic Identity"
+      ]
+    },
+    {
+      "id": "KC-CS-003",
+      "title": "Three Lives, One Law",
+      "supports": "Kelly Code V2",
+      "subjects": [
+        {
+          "name": "Sonia Delaunay",
+          "transition": "Platform Transition"
+        },
+        {
+          "name": "Grace Kelly",
+          "transition": "Role Transition"
+        },
+        {
+          "name": "Emma Bunton",
+          "transition": "System Transition"
+        }
+      ]
+    }
+  ],
+
+  "findings": [
+    "Recognizable identities emerge through recurring systems.",
+    "Consistency increases recognizability.",
+    "Identity strength is measurable through successful transition.",
+    "The strongest identities survive medium, role, system, and era."
+  ],
+
+  "formula": {
+    "recognizable_identity": [
+      "Visual Consistency",
+      "Communication Consistency",
+      "Behavioral Consistency",
+      "Symbolic Meaning"
+    ],
+    "timeless_identity": {
+      "equation": "Recognizable Identity + Portability = Timeless Identity"
+    }
+  },
+
+  "concluding_thesis": "Identity survives the context.",
+
+  "copyright": {
+    "holder": "Nicholas Van-Orton",
+    "year": 2026
+  }
+}
