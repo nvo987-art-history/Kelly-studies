@@ -1,1640 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Kelly Code Studies | Empirical Studies of Identity, Recognizability and Portability | NVO987 
-</title>
-
-<meta name="description" content="
-Kelly Code Studies presents empirical case studies exploring identity, recognizability, and portability across art, politics, film, fashion, design, and popular culture.">
-
-<meta name="keywords" content="
-Kelly Code,
-Identity Theory,
-Recognizability,
-Portability,
-Identity Studies,
-Visual Identity,
-Brand Identity,
-Sonia Delaunay,
-Grace Kelly,
-Jacqueline Kennedy,
-Alfred Hitchcock,
-Emma Bunton,
-Identity Systems,
-Personal Branding,
-Cultural Analysis,
-Case Studies">
-
-<meta name="author" content="Nicholas Van-Orton">
-
-<meta name="robots" content="index, follow">
-
-<meta name="theme-color" content="#050505">
-
-<link rel="canonical" href="https://studies.kellycode.us">
-
-<!-- Open Graph -->
-
-<meta property="og:type" content="website">
-
-<meta property="og:title"
-content="Kelly Code Studies">
-
-<meta property="og:description"
-content="Empirical Studies of Identity, Recognizability and Portability">
-
-<meta property="og:url"
-content="https://studies.kellycode.us">
-
-<meta property="og:site_name"
-content="Kelly Code Studies">
-
-<meta property="og:image"
-content="https://studies.kellycode.us/og-image.jpg">
-
-<!-- Twitter -->
-
-<meta name="twitter:card"
-content="summary_large_image">
-
-<meta name="twitter:title"
-content="Kelly Code Studies">
-
-<meta name="twitter:description"
-content="Empirical Studies of Identity, Recognizability and Portability">
-
-<meta name="twitter:image"
-content="https://studies.kellycode.us/og-image.jpg">
-
-<!-- Fonts -->
-
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap">
-
-<!-- Structured Data -->
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"CreativeWork",
-"name":"Kelly Code Studies",
-"description":"Empirical Studies of Identity, Recognizability and Portability",
-"author":{
-"@type":"Person",
-"name":"Nicholas Van-Orton"
-},
-"publisher":{
-"@type":"Organization",
-"name":"Kelly Code"
-},
-"url":"https://studies.kellycode.us"
-}
-</script>
+<title>KELLY CODE Studies</title>
+<meta name="description" content="Research and studies behind the KELLY CODE and the Theory of Identity Survival.">
+<link rel="canonical" href="https://studies.kellycode.us/">
 
 <style>
-  :root{
-
---gold:#D4AF37;
---gold-light:#F5D76E;
---gold-dark:#9A7A17;
-
---bg:#050505;
---card:#111111;
---card-hover:#161616;
-
---text:#F5F5F5;
---muted:#BEBEBE;
-
---border:rgba(212,175,55,.20);
-
---shadow:
-0 0 40px rgba(212,175,55,.05);
-
---shadow-hover:
-0 0 70px rgba(212,175,55,.14);
-
+:root{
+    --bg:#050505;
+    --card:#111111;
+    --gold:#d4af37;
+    --text:#f2f2f2;
+    --text-soft:#c9c9c9;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-
-background:var(--bg);
-color:var(--text);
-
-font-family:'EB Garamond',serif;
-
-line-height:1.9;
-
-overflow-x:hidden;
-
-position:relative;
-
+    background:
+        radial-gradient(circle at top,
+        #1b1b1b 0%,
+        #0c0c0c 35%,
+        #000 100%);
+    color:var(--text);
+    font-family:Georgia,"Times New Roman",serif;
+    overflow-x:hidden;
 }
 
-/* Premium Gold Atmosphere */
-
-body::before{
-
-content:"";
-
-position:fixed;
-
-top:-50%;
-left:-50%;
-
-width:200%;
-height:200%;
-
-background:
-
-radial-gradient(
-circle at center,
-rgba(212,175,55,.04),
-transparent 40%
-),
-
-radial-gradient(
-circle at 70% 30%,
-rgba(212,175,55,.03),
-transparent 30%
-),
-
-radial-gradient(
-circle at 30% 70%,
-rgba(212,175,55,.03),
-transparent 30%
-);
-
-animation:goldAura 30s linear infinite;
-
-pointer-events:none;
-
-z-index:-1;
-
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(0,0,0,.90);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid rgba(212,175,55,.15);
 }
 
-@keyframes goldAura{
-
-0%{
-transform:rotate(0deg);
+nav{
+    width:min(92%,1400px);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 0;
 }
 
-100%{
-transform:rotate(360deg);
+.logo{
+    color:var(--gold);
+    text-decoration:none;
+    font-size:2rem;
+    letter-spacing:6px;
+    font-weight:bold;
 }
 
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    color:var(--gold);
+    text-decoration:none;
+    transition:.35s;
+}
+
+.menu a:hover{
+    color:white;
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    color:var(--gold);
+    font-size:clamp(3rem,10vw,6rem);
+    letter-spacing:10px;
+    margin-bottom:30px;
+    animation:fadeUp 1.2s ease;
+}
+
+.hero p{
+    max-width:900px;
+    color:var(--text-soft);
+    line-height:2;
+    font-size:1.2rem;
+    animation:fadeUp 1.8s ease;
+}
+
+.button{
+    display:inline-block;
+    margin-top:50px;
+    padding:16px 42px;
+    border:1px solid var(--gold);
+    border-radius:40px;
+    color:var(--gold);
+    text-decoration:none;
+    transition:.4s;
+}
+
+.button:hover{
+    background:var(--gold);
+    color:black;
+    box-shadow:0 0 30px rgba(212,175,55,.25);
 }
 
 .container{
-
-width:min(1250px,92%);
-margin:auto;
-
+    width:min(92%,1300px);
+    margin:auto;
+    padding-bottom:120px;
 }
 
-.analysis-container{
-
-max-width:950px;
-
+.section-title{
+    text-align:center;
+    color:var(--gold);
+    font-size:clamp(2rem,5vw,3rem);
+    margin-bottom:70px;
+    letter-spacing:4px;
 }
 
-section{
-
-padding:100px 0;
-
+.grid{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
 }
 
-a{
-
-color:var(--gold);
-
-text-decoration:none;
-
-transition:.3s;
-
+.study-card{
+    background:rgba(12,12,12,.94);
+    border:1px solid rgba(212,175,55,.15);
+    border-radius:30px;
+    padding:45px;
+    position:relative;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.6);
 }
 
-a:hover{
-
-color:var(--gold-light);
-
+.study-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(212,175,55,.08),
+            transparent
+        );
+    transform:translateX(-150%);
+    transition:1s;
 }
 
-h1,h2,h3,h4{
-
-font-family:'Cinzel',serif;
-
-font-weight:600;
-
-letter-spacing:1px;
-
-color:var(--gold);
-
+.study-card:hover::before{
+    transform:translateX(150%);
 }
 
-h1{
-
-font-size:clamp(3.5rem,8vw,6.5rem);
-
-line-height:1.05;
-
+.study-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(212,175,55,.35);
 }
 
-h2{
-
-font-size:clamp(2rem,5vw,3.2rem);
-
-margin-bottom:30px;
-
+.study-card h2{
+    color:var(--gold);
+    margin-bottom:25px;
+    font-size:2rem;
 }
 
-h3{
-
-font-size:1.5rem;
-
-margin-bottom:18px;
-
+.study-card p{
+    color:#d8d8d8;
+    line-height:2;
+    margin-bottom:35px;
+}
+  .study-card a{
+    display:inline-block;
+    padding:14px 30px;
+    border:1px solid rgba(212,175,55,.35);
+    border-radius:40px;
+    text-decoration:none;
+    color:var(--gold);
+    transition:.35s;
 }
 
-p{
-
-font-size:1.15rem;
-
-margin-bottom:20px;
-
-color:var(--text);
-
+.study-card a:hover{
+    background:var(--gold);
+    color:black;
 }
 
-ul{
-
-padding-left:25px;
-
+footer{
+    margin-top:100px;
+    padding:80px 20px;
+    text-align:center;
+    border-top:1px solid rgba(212,175,55,.12);
 }
 
-li{
-
-margin-bottom:12px;
-
+footer h3{
+    color:var(--gold);
+    letter-spacing:4px;
+    margin-bottom:25px;
 }
 
-/* Hero */
-
-.hero{
-
-min-height:100vh;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-
-position:relative;
-
+footer p{
+    color:#bfbfbf;
+    line-height:2;
 }
 
-.hero::before{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-background:
-
-radial-gradient(
-circle at center,
-rgba(212,175,55,.08),
-transparent 70%
-);
-
-pointer-events:none;
-
+footer a{
+    color:var(--gold);
+    text-decoration:none;
 }
 
-.hero-content{
-
-position:relative;
-z-index:2;
-
-max-width:1000px;
-
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
-.hero-subtitle{
+@media(max-width:900px){
 
-font-family:'Cormorant Garamond',serif;
+    nav{
+        flex-direction:column;
+        gap:22px;
+    }
 
-font-size:1.8rem;
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
 
-margin-top:30px;
+    .hero{
+        min-height:60vh;
+        padding:70px 20px;
+    }
 
-color:#DDDDDD;
-
+    .study-card{
+        padding:35px;
+    }
 }
-
-.hero-tagline{
-
-margin-top:40px;
-
-font-size:1.15rem;
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-color:var(--gold-light);
-
-}
-
-.gold-line{
-
-width:140px;
-height:1px;
-
-background:var(--gold);
-
-margin:40px auto;
-
-}
-
-/* Section Intro */
-
-.section-intro{
-
-max-width:900px;
-
-margin-bottom:50px;
-
-}
-
-.section-intro p{
-
-color:#DDDDDD;
-
-}
-
-/* Cards */
-
-.card-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(320px,1fr));
-
-gap:30px;
-
-}
-
-.card{
-
-background:var(--card);
-
-border:1px solid var(--border);
-
-border-radius:24px;
-
-padding:35px;
-
-box-shadow:var(--shadow);
-
-transition:.35s ease;
-
-}
-
-.card:hover{
-
-transform:translateY(-6px);
-
-background:var(--card-hover);
-
-border-color:
-rgba(212,175,55,.45);
-
-box-shadow:
-var(--shadow-hover);
-
-}
-
-.card-title{
-
-font-family:'Cinzel',serif;
-
-font-size:1.25rem;
-
-margin-bottom:18px;
-
-color:var(--gold);
-
-}
-
-.card p{
-
-color:#ECECEC;
-
-}
-
-/* Large Feature Card */
-
-.feature-card{
-
-background:var(--card);
-
-border:1px solid var(--border);
-
-border-radius:28px;
-
-padding:50px;
-
-box-shadow:var(--shadow);
-
-}
-
-.feature-card p{
-
-color:#E7E7E7;
-
-}
-
-/* Timeline */
-
-.timeline{
-
-display:grid;
-
-gap:30px;
-
-margin-top:40px;
-
-}
-
-.timeline-item{
-
-background:var(--card);
-
-border:1px solid var(--border);
-
-border-radius:24px;
-
-padding:35px;
-
-}
-
-.timeline-item h3{
-
-margin-bottom:15px;
-
-}
-
-.transition{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:1.5rem;
-
-color:var(--gold-light);
-
-margin-top:20px;
-
-}
-
-/* Comparison Table */
-
-.table-wrapper{
-
-overflow-x:auto;
-
-margin-top:40px;
-
-}
-
-table{
-
-width:100%;
-
-border-collapse:collapse;
-
-min-width:700px;
-
-}
-  .table-hint{
-
-text-align:center;
-
-margin-top:18px;
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:1rem;
-
-letter-spacing:1px;
-
-color:var(--gold-light);
-
-opacity:.85;
-
-  }
-
-th{
-
-background:#0E0E0E;
-
-color:var(--gold);
-
-padding:18px;
-
-border:1px solid var(--border);
-
-font-family:'Cinzel',serif;
-
-}
-
-td{
-
-padding:18px;
-
-border:1px solid var(--border);
-
-text-align:center;
-
-color:#F1F1F1;
-
-}
-
-/* Quotes */
-
-.quote{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:1.8rem;
-
-line-height:1.5;
-
-text-align:center;
-
-max-width:900px;
-
-margin:auto;
-
-color:var(--gold-light);
-
-}
-
-/* Footer */
-
-.footer{
-
-padding:100px 20px;
-
-text-align:center;
-
-border-top:
-1px solid rgba(212,175,55,.15);
-
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-section{
-padding:80px 0;
-}
-
-.hero-subtitle{
-font-size:1.35rem;
-}
-
-.card{
-padding:28px;
-}
-
-.feature-card{
-padding:35px;
-}
-
-h1{
-font-size:3rem;
-}
-
-  }
-  </style>
-
+</style>
 </head>
 
 <body>
 
+<header>
+<nav>
+
+<a href="https://kellycode.us" class="logo">
+KELLY CODE
+</a>
+
+<div class="menu">
+    <a href="kennedy.html">Kennedy</a>
+    <a href="rosalia.html">Rosalía</a>
+    <a href="kelly.html">Kelly</a>
+    <a href="https://kellycode.us">Main Site</a>
+</div>
+
+</nav>
+</header>
+
 <section class="hero">
 
-<div class="hero-content">
-
-<h1>
-KELLY CODE STUDIES
-</h1>
-
-<div class="gold-line"></div>
-
-<p class="hero-subtitle">
-
-Empirical Studies of Identity,
-<br>
-Recognizability and Portability
-
-</p>
-
-<p class="hero-tagline">
-
-Identity Survives The Context
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ORIGINS -->
-
-<section id="origins">
-
-<div class="container">
-
-<h2>
-Origins of the Kelly Code
-</h2>
-
-<div class="feature-card">
+<h1>STUDIES</h1>
 
 <p>
-
-The Kelly Code did not begin as a theory.
-
-It began as an observation.
-
+Research, comparative analyses, and intellectual explorations
+that contributed to the development of the KELLY CODE
+and the Theory of Identity Survival.
 </p>
 
-<p>
-
-While studying the works of Sonia Delaunay and the public identity of Grace Kelly, a recurring pattern became visible.
-
-Although they lived in different eras and operated in different cultural environments, both displayed an unusually coherent visual identity.
-
-</p>
-
-<p>
-
-Their recognizability did not depend on a single image, a single achievement, or a single moment.
-
-It emerged from a consistent system of recurring elements.
-
-Colors.
-
-Forms.
-
-Behavior.
-
-Presentation.
-
-Symbolic meaning.
-
-</p>
-
-<p>
-
-This observation led to the concept of a Visual Code — a consciously constructed system of recurring elements capable of creating immediate recognition.
-
-</p>
-
-<p>
-
-As additional historical examples were examined, the idea evolved into a broader framework.
-
-The result became the Kelly Code.
-
-</p>
-
-<p>
-
-Kelly Code V1 explains how recognizable identities are formed.
-
-Kelly Code V2 explains how recognizable identities survive environmental change.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- EXECUTIVE SUMMARY -->
-
-<section id="executive-summary">
-
-<div class="container">
-
-<h2>
-Executive Summary
-</h2>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3 class="card-title">
-Identity Systems
-</h3>
-
-<p>
-
-The Kelly Code examines identity as a system of recurring patterns rather than a collection of isolated traits.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Recognizability
-</h3>
-
-<p>
-
-Kelly Code V1 explores how visual, communicative, behavioral, and symbolic consistency create recognizable identities.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Portability
-</h3>
-
-<p>
-
-Kelly Code V2 examines how recognizable identities survive transitions between environments, roles, systems, and eras.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- METHODOLOGY -->
-
-<section id="methodology">
-
-<div class="container">
-
-<h2>
-Methodology
-</h2>
-
-<div class="feature-card">
-
-<p>
-
-The studies presented on this page were selected from different cultural domains in order to test whether identical identity mechanisms can be observed across unrelated environments.
-
-</p>
-
-<p>
-
-The objective is not to examine a specific profession, institution, or historical period.
-
-The objective is to identify recurring structural patterns.
-
-</p>
-
-<p>
-
-The selected case studies represent:
-
-</p>
-
-<ul>
-
-<li>
-Politics and Cultural Representation
-</li>
-
-<li>
-Modern Art and Design
-</li>
-
-<li>
-Film and Narrative Construction
-</li>
-
-<li>
-Fashion and Visual Identity
-</li>
-
-<li>
-Popular Culture and Music
-</li>
-
-</ul>
-
-<br>
-
-<p>
-
-By comparing individuals from different fields, the studies investigate whether recognizability and portability can be understood as general identity phenomena rather than domain-specific characteristics.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CASE STUDY I -->
-
-<section id="case-study-one">
-
-<div class="container">
-
-<h2>
-Case Study I
-</h2>
-
-<div class="section-intro">
-
-<p>
-
-<strong>Jacqueline Kennedy and the Art of Visual Power</strong>
-
-</p>
-
-<p>
-
-This study examines how Jacqueline Kennedy transformed public representation into a coherent identity system and demonstrates the principles later formalized in Kelly Code V1.
-
-</p>
-
-</div>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3 class="card-title">
-Visual Consistency
-</h3>
-
-<p>
-
-The White House restoration, visual presentation, fashion choices, and public imagery formed a recognizable visual framework.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Communication Consistency
-</h3>
-
-<p>
-
-Measured speech, selective appearances, and disciplined media engagement created a distinctive communication pattern.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Behavioral Consistency
-</h3>
-
-<p>
-
-Restraint, composure, and predictability reinforced public trust and recognizability.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Symbolic Meaning
-</h3>
-
-<p>
-
-Jacqueline Kennedy evolved from First Lady into a lasting cultural symbol representing elegance, sophistication, and historical continuity.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CASE STUDY II -->
-
-<section id="case-study-two">
-
-<div class="container">
-
-<h2>
-Case Study II
-</h2>
-
-<div class="section-intro">
-
-<p>
-
-<strong>
-Alfred Hitchcock & Sonia Delaunay
-</strong>
-
-</p>
-
-<p>
-
-This study investigates the choreography of attention and demonstrates how recurring structures of perception generate recognizability across different artistic mediums.
-
-</p>
-
-</div>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3 class="card-title">
-Visual Rhythm
-</h3>
-
-<p>
-
-Sonia Delaunay organized color, geometry, and movement into recurring visual systems that became instantly recognizable.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Attention Architecture
-</h3>
-
-<p>
-
-Alfred Hitchcock structured information, suspense, and narrative timing to guide perception with extraordinary precision.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Pattern Recognition
-</h3>
-
-<p>
-
-In both cases, recognition emerged not from isolated works but from recurring organizational principles.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Symbolic Identity
-</h3>
-
-<p>
-
-Over time, both figures became symbols of larger ideas: visual rhythm in Delaunay's case and suspense in Hitchcock's.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- CASE STUDY III -->
-
-<section id="case-study-three">
-
-<div class="container">
-
-<h2>
-Case Study III
-</h2>
-
-<div class="section-intro">
-
-<p>
-
-<strong>
-Three Lives, One Law
-</strong>
-
-</p>
-
-<p>
-
-This study explores Kelly Code V2 and examines how recognizable identities survive environmental change through portability.
-
-</p>
-
-</div>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<h3>
-Sonia Delaunay
-</h3>
-
-<p>
-
-Sonia Delaunay demonstrated Platform Transition by transferring the same recognizable visual code from painting into fashion and design.
-
-</p>
-
-<div class="transition">
-
-Painting
-<br>
-↓
-<br>
-Fashion
-<br>
-↓
-<br>
-Design
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>
-Grace Kelly
-</h3>
-
-<p>
-
-Grace Kelly demonstrated Role Transition by carrying the same recognizable identity from cinema into royalty and eventually into institutional symbolism.
-
-</p>
-
-<div class="transition">
-
-Film Star
-<br>
-↓
-<br>
-Princess
-<br>
-↓
-<br>
-Institution
-
-</div>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>
-Emma Bunton
-</h3>
-
-<p>
-
-Emma Bunton demonstrated System Transition by preserving identity after leaving a collective cultural system and establishing an independent public presence.
-
-</p>
-
-<div class="transition">
-
-Spice Girls
-<br>
-↓
-<br>
-Solo Career
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- COMPARATIVE ANALYSIS -->
-
-<section id="analysis">
-
-<div class="container analysis-container">
-
-<h2>
-Comparative Analysis
-</h2>
-
-<div class="table-wrapper">
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-Subject
-</th>
-
-<th>
-Recognizability
-</th>
-
-<th>
-Portability
-</th>
-
-<th>
-Primary Contribution
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-Jacqueline Kennedy
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-Partial
-</td>
-
-<td>
-Visual & Communication Identity
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-Sonia Delaunay
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-Visual System Transfer
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-Alfred Hitchcock
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-Partial
-</td>
-
-<td>
-Attention Architecture
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-Grace Kelly
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-Role Transition
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-Emma Bunton
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-✓
-</td>
-
-<td>
-System Transition
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-<div class="table-hint">
-
-← Swipe horizontally to view the complete comparison →
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FINDINGS -->
-
-<section id="findings">
-
-<div class="container">
-
-<h2>
-Research Findings
-</h2>
-
-<div class="card-grid">
-
-<div class="card">
-
-<h3 class="card-title">
-Finding I
-</h3>
-
-<p>
-
-Recognizable identities emerge through recurring systems rather than isolated achievements.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Finding II
-</h3>
-
-<p>
-
-Consistency across visual, communicative, behavioral, and symbolic dimensions increases recognizability.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Finding III
-</h3>
-
-<p>
-
-The strength of identity can be measured through successful transition into new environments.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3 class="card-title">
-Finding IV
-</h3>
-
-<p>
-
-The strongest identities survive changes in medium, role, organization, and historical context.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FORMULA -->
-
-<section id="formula">
-
-<div class="container">
-
-<h2>
-The Kelly Code Formula
-</h2>
-
-<div class="feature-card" style="text-align:center;">
-
-<p style="
-font-family:'Cormorant Garamond',serif;
-font-size:1.6rem;
-">
-
-Visual Consistency
-
-<br><br>
-
-+
-
-<br><br>
-
-Communication Consistency
-
-<br><br>
-
-+
-
-<br><br>
-
-Behavioral Consistency
-
-<br><br>
-
-+
-
-<br><br>
-
-Symbolic Meaning
-
-<br><br>
-
-=
-
-<br><br>
-
-Recognizable Identity
-
-</p>
-
-</div>
-
-<br><br>
-
-<div class="feature-card" style="text-align:center;">
-
-<p style="
-font-family:'Cormorant Garamond',serif;
-font-size:1.8rem;
-">
-
-Recognizable Identity
-
-<br><br>
-
-+
-
-<br><br>
-
-Portability
-
-<br><br>
-
-=
-
-<br><br>
-
-Timeless Identity
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONCLUSION -->
-
-<section id="conclusion">
-
-<div class="container">
-
-<h2>
-Concluding Thesis
-</h2>
-
-<div class="feature-card">
-
-<p>
-
-The studies presented on this page suggest that lasting identity is not determined solely by visibility, popularity, or achievement.
-
-</p>
-
-<p>
-
-Instead, identity appears to emerge through recurring systems capable of generating recognizability across time.
-
-</p>
-
-<p>
-
-Kelly Code V1 proposes that recognizability is produced through consistent visual, communicative, behavioral, and symbolic patterns.
-
-</p>
-
-<p>
-
-Kelly Code V2 proposes that the true strength of identity becomes visible only when those patterns survive environmental change.
-
-</p>
-
-<p>
-
-The evidence presented through the cases of Jacqueline Kennedy, Sonia Delaunay, Alfred Hitchcock, Grace Kelly, and Emma Bunton suggests a common principle:
-
-</p>
-
-<div class="quote">
-
-Identity survives the context.
-
-</div>
-
-<br>
-
-<p>
-
-When recognizability survives the medium, the role, the system, and the era, identity becomes more than known.
-
-</p>
-
-<p>
-
-It becomes historically significant.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- PREMIUM FOOTER -->
-
-<footer class="footer">
-
-<div class="container">
-
-<div style="
-font-family:'Cinzel',serif;
-font-size:1.8rem;
-color:#D4AF37;
-margin-bottom:25px;
-">
-
-Nicholas Van-Orton | NVO987
-
-</div>
-
-<div class="gold-line"></div>
-
-<p style="
-max-width:800px;
-margin:0 auto 40px auto;
-color:#BEBEBE;
-">
-
-Kelly Code Studies is an independent research project exploring identity, recognizability, and portability across art, politics, design, film, fashion, and popular culture.
-
-</p>
-
-<div style="
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-margin-bottom:40px;
-">
-
-<a href="mailto:contract@kellycode.us">
-
-contract@kellycode.us
-
+<a href="#studies" class="button">
+Explore Studies
 </a>
 
-<a href="https://identity.nvo987.us"
-target="_blank">
+</section>
 
-did:web:identity.nvo987.us
+<main id="studies" class="container">
 
+<h2 class="section-title">
+Research Collection
+</h2>
+
+<div class="grid">
+
+<div class="study-card">
+    <h2>Kennedy</h2>
+
+    <p>
+        A study examining public identity, cultural symbolism,
+        and the organizing principles behind one of the most
+        recognizable figures of the twentieth century.
+    </p>
+
+    <a href="kennedy.html">
+        Open Study
+    </a>
+</div>
+
+<div class="study-card">
+    <h2>Rosalía</h2>
+
+    <p>
+        An exploration of rhythm, collective movement,
+        visual systems, and the relationship between
+        attention and recurring patterns.
+    </p>
+
+    <a href="rosalia.html">
+        Open Study
+    </a>
+</div>
+
+<div class="study-card">
+    <h2>Kelly</h2>
+
+    <p>
+        A study dedicated to identity portability,
+        transformation, and the mechanisms through which
+        identities survive changing environments.
+    </p>
+
+    <a href="kelly.html">
+        Open Study
+    </a>
+</div>
+
+</div>
+
+<footer>
+
+<h3>KELLY CODE STUDIES</h3>
+
+<p>
+Research supporting the development of
+the Theory of Identity Survival.
+</p>
+
+<p style="margin-top:20px;">
+<a href="https://kellycode.us">
+https://kellycode.us
 </a>
+</p>
 
-</div>
-
-<div style="
-color:#777;
-font-size:.95rem;
-">
-
-© 2026 Kelly Code Studies
-
-<br>
-
-Version 1.0
-
-</div>
-
-</div>
+<p style="margin-top:10px;">
+© 2026 Nicholas Van-Orton
+</p>
 
 </footer>
+
+</main>
 
 </body>
 </html>
