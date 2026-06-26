@@ -1,103 +1,144 @@
 {
-  "document": {
-    "title": "Kelly Code Studies",
-    "subtitle": "Empirical Studies of Identity, Recognizability and Portability",
-    "version": "1.0",
-    "publication_date": "2026-06-14",
-    "language": "en",
-    "website": "https://studies.kellycode.us"
-  },
-
-  "author": {
-    "name": "Nicholas Van-Orton",
-    "identifier": "NVO987"
-  },
-
-  "framework": {
-    "name": "Kelly Code",
-    "components": [
-      {
-        "version": "V1",
-        "title": "The Theory of Recognizability"
-      },
-      {
-        "version": "V2",
-        "title": "The Theory of Portability"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://studies.kellycode.us/#website",
+      "url": "https://studies.kellycode.us/",
+      "name": "KELLY CODE STUDIES",
+      "description": "Research and studies supporting the development of the KELLY CODE and the Theory of Identity Survival.",
+      "inLanguage": "en",
+      "datePublished": "2026-06-26",
+      "dateModified": "2026-06-26",
+      "publisher": {
+        "@id": "https://studies.kellycode.us/#organization"
       }
-    ]
-  },
-
-  "origin": {
-    "description": "The Kelly Code emerged from comparative observations involving Sonia Delaunay and Grace Kelly, leading to the concept of recurring identity systems and visual codes."
-  },
-
-  "case_studies": [
+    },
     {
-      "id": "KC-CS-001",
-      "title": "Jacqueline Kennedy and the Art of Visual Power",
-      "supports": "Kelly Code V1",
-      "focus": [
-        "Visual Consistency",
-        "Communication Consistency",
-        "Behavioral Consistency",
-        "Symbolic Meaning"
+      "@type": "Organization",
+      "@id": "https://studies.kellycode.us/#organization",
+      "name": "KELLY CODE STUDIES",
+      "url": "https://studies.kellycode.us/",
+      "email": "contact@kellycode.us",
+      "founder": {
+        "@id": "https://studies.kellycode.us/#author"
+      },
+      "sameAs": [
+        "https://kellycode.us/",
+        "https://nexarium.us/",
+        "https://identity.nvo987.us/"
       ]
     },
     {
-      "id": "KC-CS-002",
-      "title": "Alfred Hitchcock and Sonia Delaunay: The Choreography of Attention",
-      "supports": "Kelly Code V1",
-      "focus": [
-        "Visual Rhythm",
-        "Attention Architecture",
-        "Pattern Recognition",
-        "Symbolic Identity"
-      ]
+      "@type": "Person",
+      "@id": "https://studies.kellycode.us/#author",
+      "name": "Nicholas Van-Orton",
+      "email": "contact@kellycode.us",
+      "identifier": "did:web:identity.nvo987.us",
+      "url": "https://nexarium.us/",
+      "sameAs": [
+        "https://identity.nvo987.us/",
+        "https://nexarium.us/"
+      ],
+      "subjectOf": {
+        "@id": "https://studies.kellycode.us/#portal"
+      }
     },
     {
-      "id": "KC-CS-003",
-      "title": "Three Lives, One Law",
-      "supports": "Kelly Code V2",
-      "subjects": [
+      "@type": "WebPage",
+      "@id": "https://studies.kellycode.us/#webpage",
+      "url": "https://studies.kellycode.us/",
+      "name": "KELLY CODE STUDIES",
+      "description": "Research gateway to the studies and intellectual explorations behind the KELLY CODE and the Theory of Identity Survival.",
+      "inLanguage": "en",
+      "datePublished": "2026-06-26",
+      "dateModified": "2026-06-26",
+      "isPartOf": {
+        "@id": "https://studies.kellycode.us/#website"
+      },
+      "mainEntity": {
+        "@id": "https://studies.kellycode.us/#portal"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://studies.kellycode.us/#portal",
+      "name": "KELLY CODE STUDIES",
+      "alternateName": "Studies of the Theory of Identity Survival",
+      "headline": "KELLY CODE STUDIES",
+      "description": "A collection of comparative studies, research materials, and intellectual explorations that contributed to the development of the KELLY CODE and the Theory of Identity Survival.",
+      "datePublished": "2026-06-26",
+      "dateModified": "2026-06-26",
+      "copyrightYear": 2026,
+      "copyrightHolder": {
+        "@id": "https://studies.kellycode.us/#author"
+      },
+      "author": {
+        "@id": "https://studies.kellycode.us/#author"
+      },
+      "creator": {
+        "@id": "https://studies.kellycode.us/#author"
+      },
+      "publisher": {
+        "@id": "https://studies.kellycode.us/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://studies.kellycode.us/#webpage"
+      },
+      "isPartOf": {
+        "@id": "https://studies.kellycode.us/#website"
+      },
+      "about": {
+        "@id": "https://studies.kellycode.us/#theory"
+      },
+      "hasPart": [
         {
-          "name": "Sonia Delaunay",
-          "transition": "Platform Transition"
+          "@id": "https://studies.kellycode.us/kennedy.html#study"
         },
         {
-          "name": "Grace Kelly",
-          "transition": "Role Transition"
+          "@id": "https://studies.kellycode.us/rosalia.html#study"
         },
         {
-          "name": "Emma Bunton",
-          "transition": "System Transition"
+          "@id": "https://studies.kellycode.us/kelly.html#study"
+        }
+      ],
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://studies.kellycode.us/#theory",
+      "name": "The Theory of Identity Survival",
+      "alternateName": "KELLY CODE",
+      "description": "An interdisciplinary theory examining portability, autonomy, recurring patterns, and the persistence of identity across environments, roles, and systems.",
+      "author": {
+        "@id": "https://studies.kellycode.us/#author"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://studies.kellycode.us/#webpage"
+      },
+      "subjectOf": {
+        "@id": "https://studies.kellycode.us/#portal"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://studies.kellycode.us/#collection",
+      "name": "Research Collection",
+      "isPartOf": {
+        "@id": "https://studies.kellycode.us/#website"
+      },
+      "hasPart": [
+        {
+          "@id": "https://studies.kellycode.us/kennedy.html#study"
+        },
+        {
+          "@id": "https://studies.kellycode.us/rosalia.html#study"
+        },
+        {
+          "@id": "https://studies.kellycode.us/kelly.html#study"
         }
       ]
     }
-  ],
-
-  "findings": [
-    "Recognizable identities emerge through recurring systems.",
-    "Consistency increases recognizability.",
-    "Identity strength is measurable through successful transition.",
-    "The strongest identities survive medium, role, system, and era."
-  ],
-
-  "formula": {
-    "recognizable_identity": [
-      "Visual Consistency",
-      "Communication Consistency",
-      "Behavioral Consistency",
-      "Symbolic Meaning"
-    ],
-    "timeless_identity": {
-      "equation": "Recognizable Identity + Portability = Timeless Identity"
-    }
-  },
-
-  "concluding_thesis": "Identity survives the context.",
-
-  "copyright": {
-    "holder": "Nicholas Van-Orton",
-    "year": 2026
-  }
+  ]
 }
